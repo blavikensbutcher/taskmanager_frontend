@@ -11,3 +11,7 @@ N
 src/constants/seo.constants.ts,8/3/8372ec69e4208fe840a4de5302b2014556ee1809
 N
 src/config/pages-url.config.ts,2/6/263397ed9d1475386fb3aeb71f480ae19ec4392e
+D
+src/app/globals.scss,e/5/e538556067dff0d3283740bfa03e693e5f9332f8
+B
+tailwind.config.ts,5/2/52c961376029165b06e7861b1dc68c3b2455eeff
