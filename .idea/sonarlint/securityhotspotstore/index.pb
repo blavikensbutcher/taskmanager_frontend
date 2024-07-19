@@ -31,3 +31,15 @@ G
 src/types/root.types.ts,5/f/5f3827f44d9466803e599905a44f47f0547df684
 K
 src/types/pomodoro.types.ts,b/c/bc771b868767f45653267aee039b373c3a91d61a
+G
+src/api/interceptors.ts,b/b/bb97cfdd7c6619cb74fe9fc1e2cd1462f23b4f86
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+<
+.env.example,d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871
+@
+src/api/error.ts,e/d/ed04814a6d06b17c7fbc65a59ab6673f9bcd8333
+Q
+!src/service/auth-token.service.ts,3/9/39ec6ad8f38b888eb7ef339f27610ae8b7e08766
+K
+src/service/auth.service.ts,4/4/4476b80c2e4dd0816d17d0173d72cb7df61e369c

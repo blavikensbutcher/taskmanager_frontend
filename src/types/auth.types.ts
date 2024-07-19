@@ -7,6 +7,7 @@ export interface IUser {
 	id: number
 	name?: string
 	email: string
+	accessToken: string,
 	workInterval?: number
 	breakInterval?: number
 	intervalCount?: number
