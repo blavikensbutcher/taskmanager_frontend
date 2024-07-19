@@ -5,7 +5,7 @@ import { axiosClassic } from '@/api/interceptors'
 import {
 	removeFromStorage,
 	saveTokenStorage
-} from '@/service/auth-token.service'
+} from '@/services/auth-token.service'
 
 export const authService = {
 	async main(type: 'login' | 'register', data: IAuthForm) {
