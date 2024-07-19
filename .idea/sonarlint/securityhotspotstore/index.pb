@@ -54,3 +54,5 @@ P
  src/services/pomodoro.service.ts,3/8/38963aad4181ad63ad52d7af9563df937935d842
 R
 "src/services/time-block.service.ts,8/8/8872b4804b23b95fc675d9bc6b8e7c9ebb1ec158
+L
+src/services/task.service.ts,0/b/0bdc825cdc352b87deb6c0233a602472e494923c
