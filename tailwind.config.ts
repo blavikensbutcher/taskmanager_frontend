@@ -153,7 +153,7 @@ const config: Config = {
 					"url('https://i.ibb.co/g66yJnm/Ellipse-94.png')",
 				homeButton:
 					'linear-gradient(112.83deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 110.84%)',
-				smartHomeDropzone: `url("data: image/svg+xml,%3csvg width='100%25' height='100%25' xmlns= 'http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23E0E5F2FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='5' stroke-linecap='square' /%3e%3c/svg%3e")`
+				smartHomeDropzone: `url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23E0E5F2FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='5' stroke-linecap='square' /%3e%3c/svg%3e")`
 			}
 		},
 		screens: {
@@ -244,9 +244,63 @@ const config: Config = {
 				700: '#be185d',
 				800: '#9d174d',
 				900: '#831843'
-			}
-		}
-	},
-	plugins: []
+			},
+			gray: {
+				50: '#f9fafb',
+				100: '#f3f4f6',
+				200: '#e5e7eb',
+				300: '#d1d5db',
+				400: '#9ca3af',
+				500: '#6b7280',
+				600: '#4b5563',
+				700: '#374151',
+				800: '#1f2937',
+				900: '#111827',
+				950: '#030712'
+			},
+			green: {
+				50: '#f0fdf4',
+				100: '#dcfce7',
+				200: '#bbf7d0',
+				300: '#86efac',
+				400: '#4ade80',
+				500: '#22c55e',
+				600: '#16a34a',
+				700: '#15803d',
+				800: '#166534',
+				900: '#14532d',
+				950: '#052e16'
+			},
+			red: {
+				50: '#fef2f2',
+				100: '#fee2e2',
+				200: '#fecaca',
+				300: '#fca5a5',
+				400: '#f87171',
+				500: '#ef4444',
+				600: '#dc2626',
+				700: '#b91c1c',
+				800: '#991b1b',
+				900: '#7f1d1d',
+				950: '#450a0a'
+			},
+			dark: {
+				50: '#f5f5f5',
+				100: '#e0e0e0',
+				200: '#b3b3b3',
+				300: '#808080',
+				400: '#4d4d4d',
+				500: '#262626',
+				600: '#1a1a1a',
+				700: '#0d0d0d',
+				800: '#050505',
+				900: '#000000',
+				950: '#000000'
+			},
+			white: '#FFFFFF'
+		},
+		plugins: []
+	}
 }
+
 export default config

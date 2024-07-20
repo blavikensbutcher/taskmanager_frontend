@@ -68,3 +68,19 @@ E
 src/app/auth/Auth.tsx,7/c/7c79af971343dbd09315e52773635ec419fef0d7
 L
 src/app/auth/auth.module.css,9/d/9debaa76fbf195e731d66491107f028950761e2c
+S
+#src/components/ui/fields/Fields.tsx,c/e/ce1d60020c3e5e67809a48d511fb56e64a8fe3f1
+Z
+*src/components/ui/fields/fields.module.css,7/9/7910efab5978aaf39d98b88119855569cf04bed4
+X
+(src/components/ui/checkboxs/Checkbox.tsx,7/5/75b2be2f81a3f5eb31734087e55cbc07081bf63e
+T
+$src/components/ui/buttons/Button.tsx,e/5/e53d7af4bf448c404f57a23052f1f4ee44343db2
+M
+src/components/ui/Heading.tsx,b/d/bd84e35555e9220633f6b489c9ea0496532f2cf0
+L
+src/components/ui/Loader.tsx,1/0/10ff579d5c72ea51e0c8e1da4b728f76a3f23da6
+K
+src/components/ui/Badge.tsx,2/1/21d38a7f797e57db09dbb06043e23ea72d1fcaac
+B
+src/app/i/page.tsx,2/c/2cfe238dde27e45cbf3df89332883ab612a4600b

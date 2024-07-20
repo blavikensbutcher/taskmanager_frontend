@@ -1,0 +1,4 @@
+.label {
+	@apply text-sm text-white/60 dark:text-white ml-1.5 font-medium;
+}
+
