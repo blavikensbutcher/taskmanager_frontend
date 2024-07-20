@@ -1,11 +1,15 @@
 import axios, { CreateAxiosDefaults } from 'axios'
 
 import { errorCatch } from '@/api/error'
-
-import { getAccessToken, removeFromStorage } from '@/services/auth-token.service'
+import "dotenv/config"
+import {
+	getAccessToken,
+	removeFromStorage
+} from '@/services/auth-token.service'
 import { authService } from '@/services/auth.service'
 
-const BASE_URL: string = process.env.BASE_URL
+const BASE_URL: string = process.env.NEXT_PUBLIC_BASE_URL
+
 
 const options: CreateAxiosDefaults = {
 	baseURL: BASE_URL,
