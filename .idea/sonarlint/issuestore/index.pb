@@ -56,3 +56,15 @@ R
 "src/services/time-block.service.ts,8/8/8872b4804b23b95fc675d9bc6b8e7c9ebb1ec158
 L
 src/services/task.service.ts,0/b/0bdc825cdc352b87deb6c0233a602472e494923c
+E
+src/app/auth/page.tsx,6/3/63ed1e9e4326e531c8c47a07d9a08a3e5f2ee9f7
+=
+tsconfig.json,6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0
+?
+next.config.mjs,d/f/df8bd0b91ecb778bf2a1b031c7677390c7442bb4
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+E
+src/app/auth/Auth.tsx,7/c/7c79af971343dbd09315e52773635ec419fef0d7
+L
+src/app/auth/auth.module.css,9/d/9debaa76fbf195e731d66491107f028950761e2c
