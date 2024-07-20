@@ -86,3 +86,25 @@ B
 src/app/i/page.tsx,2/c/2cfe238dde27e45cbf3df89332883ab612a4600b
 R
 "src/services/auth-token.service.ts,5/c/5c55bdf0d80ca06991ca54e8110431d01d458fb8
+M
+src/middlewares/middleware.ts,0/a/0a65da2120b0c18591e604fcff515e0870f41ea0
+A
+src/middleware.ts,c/8/c877023f10ac16a1ece2899a03aec3e05df9896c
+H
+src/app/i/Statistics.tsx,6/1/618596e17f68ba1893421b2a959f88ba2cc50d3b
+G
+src/hooks/useProfile.ts,b/5/b5735ae276a2d2903b520fa363ec0244422d656b
+O
+src/app/i/statistics.module.css,2/c/2c70dae513ca5ce12970246fe6adb7e7ca210970
+D
+src/app/i/layout.tsx,9/8/98186cecc5122141bdcdd78326c6098c1961080f
+c
+3src/components/dashboard-layout/DashboardLayout.tsx,4/a/4a8f04052a4ad5e8102e9ac8c0873c5435af38df
+R
+"src/components/sidebar/Sidebar.tsx,0/e/0e670b44d81dc3b390fc56f3b98f0b7f276d8123
+P
+ src/components/header/Header.tsx,9/0/9060a042469f8f70ed376282c1ad114796b79ab6
+Y
+)src/components/header/profile/Profile.tsx,0/e/0e2edee5a6b69bd6e96627c91e2279a3a42e9317
+d
+4src/components/dashboard-layout/dashboard.module.css,2/2/22999b73cdc21da08569f8e29eda1007d4c1e125
