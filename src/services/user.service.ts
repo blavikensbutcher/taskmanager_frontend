@@ -1,4 +1,3 @@
-import axios from 'axios'
 
 import {IUser, TypeUserForm} from '@/types/auth.types'
 
@@ -13,7 +12,7 @@ export interface IProfileResponse {
 }
 
 class UserService {
-	private BASE_URL = '/users/Profile'
+	private BASE_URL = '/users/profile'
 
 	async getProfile() {
 		const response = await axiosWithAuth.get<IProfileResponse>(this.BASE_URL)

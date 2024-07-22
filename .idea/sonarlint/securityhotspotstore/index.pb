@@ -144,3 +144,7 @@ N
 src/hooks/useUpdateSettings.ts,2/4/24b7045040003b44f90c7d0659ca054542d4d2ab
 H
 src/hooks/useLoadData.ts,b/5/b5185c3a86c2bfc6a892f1c1982aea413f670655
+W
+'src/app/i/settings/settings.module.xcss,8/8/882393c1ee91185e47e71a26eb644f43db39f2d3
+V
+&src/app/i/settings/settings.module.css,6/1/61bd1a0241db02e073eff8da4b10aaffcf437ec1
