@@ -168,3 +168,7 @@ T
 $src/app/i/tasks/list-row/ListRow.tsx,a/e/aef17a8003c6b6b7ddb47263f2f94157d1eb6369
 f
 6src/components/ui/task-edit/date-picker/DatePicker.tsx,b/5/b5a71489c3a76e4b30295e8566fc266f057354bb
+g
+7src/components/ui/task-edit/date-picker/DatePicker.scss,e/8/e8ca539a942c34d86d5cc7a3a62a50ea37ff8963
+G
+src/hooks/useOutside.ts,d/f/df8cd145ba03213250c7e0109a8b7e652b662856
