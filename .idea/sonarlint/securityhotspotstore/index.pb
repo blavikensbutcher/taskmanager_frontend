@@ -148,3 +148,23 @@ W
 'src/app/i/settings/settings.module.xcss,8/8/882393c1ee91185e47e71a26eb644f43db39f2d3
 V
 &src/app/i/settings/settings.module.css,6/1/61bd1a0241db02e073eff8da4b10aaffcf437ec1
+G
+src/app/i/Dashboard.tsx,5/a/5a7e635bc4c8679f13bf07794ea3a8c5d6bfb7df
+H
+src/app/i/tasks/page.tsx,2/6/26553bfd8b19cb655b9d856027d187de6903f898
+M
+src/app/i/tasks/TasksView.tsx,3/5/35c95e8190246982ba4bb45e64ae00c1a13ed280
+V
+&src/app/i/tasks/list-view/ListView.tsx,d/f/dfb44d4af330d110563bc2d22c8a3bd855f7e57c
+E
+src/hooks/useTasks.ts,a/1/a10c4c216ce981bc86556497cc85d60e2b933af4
+Q
+!src/hooks/tasks/useUpdateTasks.ts,c/5/c54d649e50493f9b9868bc76359c071b88cc32ff
+M
+src/hooks/tasks/useTaskDnd.ts,2/6/26dbdacaf3e2dde68776d31661add9148902cdff
+O
+src/app/i/tasks/columns.data.ts,a/f/af2f550447073d6fd0c824d986cb0325710a3b15
+T
+$src/app/i/tasks/list-row/ListRow.tsx,a/e/aef17a8003c6b6b7ddb47263f2f94157d1eb6369
+f
+6src/components/ui/task-edit/date-picker/DatePicker.tsx,b/5/b5a71489c3a76e4b30295e8566fc266f057354bb

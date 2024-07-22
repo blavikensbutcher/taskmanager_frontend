@@ -1,4 +1,4 @@
-import {IRootTypes} from "@/types/root.types";
+import type {IRootTypes} from "@/types/root.types";
 
 export enum EnumTaskPriority {
 	LOW = 'LOW',

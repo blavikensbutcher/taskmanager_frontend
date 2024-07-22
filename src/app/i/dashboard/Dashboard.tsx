@@ -4,9 +4,9 @@ import Loader from '@/components/ui/Loader'
 
 import { useProfile } from '@/hooks/useProfile'
 
-import style from './statistics.module.css'
+import style from './dashboard.module.css'
 
-export const Statistics = () => {
+export const Dashboard = () => {
 	const { data, isLoading } = useProfile()
 
 	return isLoading ? (
