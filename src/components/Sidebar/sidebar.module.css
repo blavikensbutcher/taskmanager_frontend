@@ -1,0 +1,15 @@
+.sidebar {
+    @apply border-r border-r-border h-full bg-sidebar flex flex-col
+}
+
+.link {
+    @apply flex items-center gap-2.5 p-layout border-b border-b-border
+}
+
+.span {
+    @apply text-2xl font-bold relative
+}
+
+.logout_container {
+    @apply p-3 relative
+}

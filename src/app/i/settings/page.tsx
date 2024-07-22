@@ -6,19 +6,18 @@ import { NO_INDEX_PAGE } from '@/constants/seo.constants'
 
 import { Statistics } from '@/app/i/Statistics'
 import DashboardLayout from "@/components/Dashboard-layout/DashboardLayout";
+import {Settings} from "@/app/i/settings/Settings";
 
 export const metadata: Metadata = {
-	title: 'Dashboard',
-	...NO_INDEX_PAGE
+    title: 'Settings',
+    ...NO_INDEX_PAGE
 }
 
-export default function DashboardPage() {
-	return (
-		<div>
-			<DashboardLayout>
-			<Heading title='Statistics' />
-			<Statistics />
-			</DashboardLayout>
-		</div>
-	)
+export default function SettingsPage() {
+    return (
+        <div>
+            <Heading title='Settings' />
+            <Settings />
+        </div>
+    )
 }
