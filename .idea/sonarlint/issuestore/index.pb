@@ -172,3 +172,15 @@ g
 7src/components/ui/task-edit/date-picker/DatePicker.scss,e/8/e8ca539a942c34d86d5cc7a3a62a50ea37ff8963
 G
 src/hooks/useOutside.ts,d/f/df8cd145ba03213250c7e0109a8b7e652b662856
+m
+=src/components/ui/task-edit/date-picker/DatePickerCaption.tsx,d/f/df72345663bd8640d127110368047fbbfe655af5
+j
+:src/components/ui/task-edit/single-select/SingleSelect.tsx,3/3/33e3d2426ec63a49dd65f5dd079417b203fc9e32
+J
+src/hooks/useCreateTask.ts,b/f/bf073b6fcc19c493dcadd1eb2f3598180cbaa251
+B
+postcss.config.mjs,a/a/aaf1cf9fa3c8ee0e6c766e4a626ddaf9bc1cbb40
+P
+ src/hooks/tasks/useDeleteTask.ts,1/d/1d6545d86cf79b9f934429d947952de5f6100443
+R
+"src/hooks/tasks/useTaskDebounce.ts,b/b/bb805cde0ef4e214a848ad9608e82818a20730bd
