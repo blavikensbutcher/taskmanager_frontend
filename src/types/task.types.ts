@@ -7,7 +7,7 @@ export enum EnumTaskPriority {
 }
 
 export interface ITaskResponse extends IRootTypes{
-	name: string
+	text: string
 	priority?: EnumTaskPriority
 	isCompleted: boolean
 }

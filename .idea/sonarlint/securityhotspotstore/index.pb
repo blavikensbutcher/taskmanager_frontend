@@ -184,3 +184,17 @@ P
  src/hooks/tasks/useDeleteTask.ts,1/d/1d6545d86cf79b9f934429d947952de5f6100443
 R
 "src/hooks/tasks/useTaskDebounce.ts,b/b/bb805cde0ef4e214a848ad9608e82818a20730bd
+]
+-src/app/i/tasks/list-view/ListView.module.css,2/9/29ba748da6b32ba88e9f74819964fb8b3dc432b7
+^
+.src/app/i/tasks/list-view/ListView.module.scss,f/9/f936583e322ea4d03431c8b98e0cb52fa8584513
+h
+8src/components/ui/transparent-field/TransparentField.tsx,e/c/ec825f9f3114779e41f010ce102f0f52932d1e75
+[
++src/app/i/tasks/list-view/ListRowParent.tsx,0/4/048701f5781b18b9812bdbadbbeedcccba363285
+O
+src/app/i/tasks/filter-tasks.ts,7/8/78ecb121932a8839c5779f0a22cc5cf29762d543
+]
+-src/app/i/tasks/list-view/ListAddRowInput.tsx,8/b/8bbe89db707acab75f3fb9042b75702a488179c3
+P
+ src/hooks/tasks/useCreateTask.ts,d/3/d300726062dc07ec4a7cd8fc8b48ecffd2f24cd5

@@ -173,7 +173,7 @@ const config: Config = {
 			'4xl-max': { max: '1850px' }
 		},
 		colors: {
-			amber: {
+			orange: {
 				50: '#fffbeb',
 				100: '#fef3c7',
 				200: '#fde68a',
