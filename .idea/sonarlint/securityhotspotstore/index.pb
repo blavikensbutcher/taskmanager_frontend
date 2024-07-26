@@ -234,3 +234,9 @@ Y
 0src/app/i/timer/rounds/PomodoroRound.module.scss,b/0/b04b725e75a9602bbfc3d8e7f90b646e9eba2400
 Y
 )src/app/i/timer/rounds/PomodoroRounds.tsx,d/4/d4bc063ac5f431797f7e7141d2ec49535e2a38e8
+O
+src/hooks/timer/useLoadSettings,8/2/821792ee5bba7950800448ae0773fbf327440d5b
+R
+"src/hooks/timer/useLoadSettings.ts,1/2/12fd8df8dfd817f9deebd57bea5c4c5464c52c01
+R
+"src/hooks/timer/useTodaySession.ts,0/3/0322089e6a4cb8e292dd0a34db3b86fdb7b7145b
