@@ -16,25 +16,16 @@ export function KanbanView() {
 
 	return (
 		<DragDropContext onDragEnd={onDragEnd}>
-			<div className={style.table}>
-				<div className={style.header}>
-					<div>Task name</div>
-					<div>Due date</div>
-					<div>Priority</div>
-					<div></div>
-				</div>
-
-				<div className={style.parentsWrapper}>
-					{COLUMNS.map(column => (
-						<KanbanColumn
-							value={column.value}
-							label={column.label}
-							items={items}
-							setItems={setItems}
-							key={column.value}
-						/>
-					))}
-				</div>
+			<div className={style.board}>
+				{COLUMNS.map(column => (
+					<KanbanColumn
+						key={column.value}
+						value={column.value}
+						label={column.value}
+						items={items}
+						setItems={setItems}
+					/>
+				))}
 			</div>
 		</DragDropContext>
 	)

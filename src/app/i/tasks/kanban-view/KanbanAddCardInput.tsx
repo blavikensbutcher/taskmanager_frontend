@@ -10,7 +10,7 @@ interface IKanbanAddCardInput {
 }
 
 export function KanbanAddCardInput({ setItems, filterDate }: IKanbanAddCardInput) {
-	const addRow = () => {
+	const addCard = () => {
 		setItems(prev => {
 			if (!prev) return
 
@@ -27,9 +27,9 @@ export function KanbanAddCardInput({ setItems, filterDate }: IKanbanAddCardInput
 	}
 
 	return (
-		<div className={style.addRow}>
+		<div className='mt-5'>
 			<button
-				onClick={addRow}
+				onClick={addCard}
 				className='italic opacity-40 text-sm'
 			>
 				Add task...

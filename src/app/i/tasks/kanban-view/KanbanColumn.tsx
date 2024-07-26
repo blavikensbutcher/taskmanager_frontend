@@ -23,43 +23,49 @@ interface IKanbanColumn {
 
 export function KanbanColumn({ value, label, items, setItems }: IKanbanColumn) {
 	return (
-		<Droppable droppableId={value}>
-			{(droppableProvided: DroppableProvided) => (
+		<Droppable droppableId={String(value)}>
+			{provided => (
 				<div
-					ref={droppableProvided.innerRef}
-					{...droppableProvided.droppableProps}
+					ref={provided.innerRef}
+					{...provided.droppableProps}
 				>
-					<div className={style.colHeading}>
-						<div className='w-full'>{label}</div>
+					<div className={style.column}>
+						<div className={style.columnHeading}>{label}</div>
+
+						{filterTasks(items, value)?.map((item, index) => (
+							<Draggable
+								key={item.id}
+								draggableId={item.id ? item.id : "id"}
+								index={index}
+							>
+								{provided => (
+									<div
+										ref={provided.innerRef}
+										{...provided.draggableProps}
+										{...provided.dragHandleProps}
+									>
+										<KanbanCard
+											key={item.id}
+											item={item}
+											setItems={setItems}
+										/>
+									</div>
+								)}
+							</Draggable>
+						))}
+						{provided.placeholder}
+
+						{value !== 'completed' && !items?.some(item => !item.id) && (
+							<KanbanAddCardInput
+								setItems={setItems}
+								filteredDate={
+									FILTERS[value]
+										? FILTERS[value].format()
+										: undefined
+								}
+							/>
+						)}
 					</div>
-					{filterTasks(items, value)?.map((item, index) => (
-						<Draggable
-							key={item.id}
-							draggableId={item.id ? item.id : 'id'}
-							index={index}
-						>
-							{(draggableProvided: DraggableProvided) => (
-								<div
-									ref={draggableProvided.innerRef}
-									{...draggableProvided.draggableProps}
-									{...draggableProvided.dragHandleProps}
-								>
-									<KanbanCard
-										key={item.id}
-										item={item}
-										setItems={setItems}
-									/>
-								</div>
-							)}
-						</Draggable>
-					))}
-					{droppableProvided.placeholder}
-					{value !== 'completed' && !items?.some(item => !item.id) && (
-						<KanbanAddCardInput
-							setItems={setItems}
-							filterDate={FILTERS[value] ? FILTERS[value].format() : undefined}
-						/>
-					)}
 				</div>
 			)}
 		</Droppable>

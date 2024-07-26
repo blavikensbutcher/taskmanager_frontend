@@ -7,6 +7,7 @@ import Loader from '@/components/ui/Loader'
 import { Checkbox } from '@/components/ui/checkboxs/Checkbox'
 import { DatePicker } from '@/components/ui/task-edit/date-picker/DatePicker'
 import { SingleSelect } from '@/components/ui/task-edit/single-select/SingleSelect'
+import { TransparentField } from '@/components/ui/transparent-field/TransparentField'
 
 import { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
 
@@ -14,7 +15,6 @@ import { useDeleteTask } from '@/hooks/tasks/useDeleteTask'
 import { useTaskDebounce } from '@/hooks/tasks/useTaskDebounce'
 
 import style from './KanbanView.module.scss'
-import {TransparentField} from "@/components/ui/transparent-field/TransparentField";
 
 interface IKanbanCard {
 	item: ITaskResponse
@@ -38,32 +38,33 @@ export function KanbanCard({ item, setItems }: IKanbanCard) {
 	return (
 		<div
 			className={clsx(
-				style.row,
-				watch('isCompleted') ? style.completed : '',
+				style.card,
+				{
+					[style.completed]: watch('isCompleted')
+				},
 				'animation-opacity'
 			)}
 		>
-			<div>
-				<span className={style.span}>
-					<button aria-describedby='todo-item'>
-						<GripVertical className={style.grip} />
-					</button>
+			<div className={style.cardHeader}>
+				<button aria-describedby='todo-item'>
+					<GripVertical className={style.grip} />
+				</button>
 
-					<Controller
-						control={control}
-						name='isCompleted'
-						render={({ field: { value, onChange } }) => (
-							<Checkbox
-								onChange={onChange}
-								checked={value}
-							/>
-						)}
-					/>
+				<Controller
+					control={control}
+					name='isCompleted'
+					render={({ field: { value, onChange } }) => (
+						<Checkbox
+							onChange={onChange}
+							checked={value}
+						/>
+					)}
+				/>
 
-					<TransparentField {...register('text')} />
-				</span>
+				<TransparentField {...register('text')} />
 			</div>
-			<div>
+
+			<div className={style.cardBody}>
 				<Controller
 					control={control}
 					name='createdAt'
@@ -71,15 +72,14 @@ export function KanbanCard({ item, setItems }: IKanbanCard) {
 						<DatePicker
 							onChange={onChange}
 							value={value || ''}
+							position='left'
 						/>
 					)}
 				/>
-			</div>
 
-			<div className='capitalize'>
 				<Controller
 					control={control}
-					name='priority'
+					name='piority'
 					render={({ field: { value, onChange } }) => (
 						<SingleSelect
 							data={['HIGH', 'MEDIUM', 'LOW'].map(item => ({
@@ -93,13 +93,11 @@ export function KanbanCard({ item, setItems }: IKanbanCard) {
 				/>
 			</div>
 
-			<div>
+			<div className={style.cardActions}>
 				<button
-					className={style.deleteTaskBtn}
+					className='opacity-50 transition-opacity hover:opacity-100'
 					onClick={() =>
-						item.id
-							? deleteTask(item.id)
-							: setItems(prev => prev?.slice(0, -1))
+						item.id ? deleteTask(item.id) : setItems(prev => prev?.slice(0, -1))
 					}
 				>
 					{isDeletePending ? <Loader size={15} /> : <Trash size={15} />}
