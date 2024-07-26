@@ -13,9 +13,9 @@ const badge = tv({
 	variants: {
 		backgroundColor: {
 			gray: 'bg-gray-500/20',
-			high: 'bg-red-400/60',
-			medium: 'bg-orange-400/70',
-			low: 'bg-blue-400/70'
+			HIGH: 'bg-red-400/60',
+			MEDIUM: 'bg-orange-400/70',
+			LOW: 'bg-blue-400/70'
 		}
 	},
 	defaultVariants: {
@@ -32,7 +32,7 @@ export const Badge = ({
 	return (
 		<span
 			className={badge({
-				backgroundColor: variant as 'low' | 'medium' | 'high',
+				backgroundColor: variant as 'LOW' | 'MEDIUM' | 'HIGH',
 				className
 			})}
 			style={style}

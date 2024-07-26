@@ -198,3 +198,5 @@ O
 -src/app/i/tasks/list-view/ListAddRowInput.tsx,8/b/8bbe89db707acab75f3fb9042b75702a488179c3
 P
  src/hooks/tasks/useCreateTask.ts,d/3/d300726062dc07ec4a7cd8fc8b48ecffd2f24cd5
+K
+src/hooks/tasks/useTasks.ts,a/a/aaeb8924bb5e7e7aa35871fb1af28654cc5b6fee

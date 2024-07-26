@@ -24,8 +24,8 @@ export const Checkbox = (props: {
 			id={id}
 			type='checkbox'
 			className={`defaultCheckbox relative inline-flex h-[20px] min-h-[20px] w-
-			[20px] min-w-[20px] appearance-none items-center justify-center rounded-md border-gray-300 text-white/0
-			outline-none transition ease-linear checked:border-none checked:text-white hover:cursor-pointer dark:border-white/10 ${
+			[20px] min-w-[20px] appearance-none items-center justify-center rounded-md text-white/0
+			outline-none transition ease-linear checked:border-none checked:bg-gray-800 checked:text-white hover:cursor-pointer dark:border-white/10 ${
 				color === 'red'
 					? 'checked:border-none checked:bg-red-500 dark:checked:bg-red-400'
 					: color === 'blue'

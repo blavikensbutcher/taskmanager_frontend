@@ -20,7 +20,7 @@ export function ListAddRowInput({ setItems, filterDate }: IListAddRowInput) {
 					id: '',
 					text: '',
 					isCompleted: false,
-					createdAt: filterDate || Date.now()
+					createdAt: filterDate || Date.now(),
 				}
 			]
 		})

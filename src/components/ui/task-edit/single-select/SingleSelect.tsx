@@ -57,7 +57,6 @@ export function SingleSelect({
 						onChange('')
 					}}
 				>
-					<X size={14} />
 				</button>
 			)}
 			{isShow && (
@@ -74,7 +73,7 @@ export function SingleSelect({
 							key={item.value}
 							onClick={event => {
 								event.preventDefault()
-								onChange(item.value)
+								onChange(item.value.toUpperCase())
 								setIsShow(false)
 							}}
 							className='block mb-4 last:mb-0 capitalize rounded-lg'

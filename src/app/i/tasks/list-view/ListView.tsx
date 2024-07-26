@@ -56,7 +56,6 @@ export function ListView({ item, setItems }: IListView) {
 							<Checkbox
 								onChange={onChange}
 								checked={value}
-								className='border'
 							/>
 						)}
 					/>
@@ -83,7 +82,7 @@ export function ListView({ item, setItems }: IListView) {
 					name='priority'
 					render={({ field: { value, onChange } }) => (
 						<SingleSelect
-							data={['high', 'medium', 'low'].map(item => ({
+							data={['HIGH', 'MEDIUM', 'LOW'].map(item => ({
 								value: item,
 								label: item
 							}))}

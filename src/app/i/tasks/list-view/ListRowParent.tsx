@@ -1,4 +1,9 @@
-import { Draggable, Droppable } from '@hello-pangea/dnd'
+import {
+	Draggable,
+	DraggableProvided,
+	Droppable,
+	DroppableProvided
+} from '@hello-pangea/dnd'
 import { Dispatch, SetStateAction } from 'react'
 
 import { ITaskResponse } from '@/types/task.types'
@@ -6,8 +11,8 @@ import { ITaskResponse } from '@/types/task.types'
 import style from './ListView.module.scss'
 import { FILTERS } from '@/app/i/tasks/columns.data'
 import { filterTasks } from '@/app/i/tasks/filter-tasks'
+import { ListAddRowInput } from '@/app/i/tasks/list-view/ListAddRowInput'
 import { ListView } from '@/app/i/tasks/list-view/ListView'
-import {ListAddRowInput} from "@/app/i/tasks/list-view/ListAddRowInput";
 
 interface IListRowParent {
 	value: string
@@ -18,16 +23,16 @@ interface IListRowParent {
 
 export function ListRowParent({
 	value,
-	items,
 	label,
+	items,
 	setItems
 }: IListRowParent) {
 	return (
 		<Droppable droppableId={value}>
-			{provided => (
+			{(droppableProvided: DroppableProvided) => (
 				<div
-					ref={provided.innerRef}
-					{...provided.droppableProps}
+					ref={droppableProvided.innerRef}
+					{...droppableProvided.droppableProps}
 				>
 					<div className={style.colHeading}>
 						<div className='w-full'>{label}</div>
@@ -35,14 +40,14 @@ export function ListRowParent({
 					{filterTasks(items, value)?.map((item, index) => (
 						<Draggable
 							key={item.id}
-							draggableId={item.id}
+							draggableId={item.id ? item.id : "id"}
 							index={index}
 						>
-							{provided => (
+							{(draggableProvided: DraggableProvided) => (
 								<div
-									ref={provided.innerRef}
-									{...provided.draggableProps}
-									{...provided.dragHandleProps}
+									ref={draggableProvided.innerRef}
+									{...draggableProvided.draggableProps}
+									{...draggableProvided.dragHandleProps}
 								>
 									<ListView
 										key={item.id}
@@ -53,9 +58,7 @@ export function ListRowParent({
 							)}
 						</Draggable>
 					))}
-
-					{provided.placeholder}
-
+					{droppableProvided.placeholder}
 					{value !== 'completed' && !items?.some(item => !item.id) && (
 						<ListAddRowInput
 							setItems={setItems}
