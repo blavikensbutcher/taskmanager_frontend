@@ -40,7 +40,7 @@ export function ListRowParent({
 					{filterTasks(items, value)?.map((item, index) => (
 						<Draggable
 							key={item.id}
-							draggableId={item.id ? item.id : "id"}
+							draggableId={item.id ? item.id : 'id'}
 							index={index}
 						>
 							{(draggableProvided: DraggableProvided) => (
@@ -58,7 +58,9 @@ export function ListRowParent({
 							)}
 						</Draggable>
 					))}
+
 					{droppableProvided.placeholder}
+
 					{value !== 'completed' && !items?.some(item => !item.id) && (
 						<ListAddRowInput
 							setItems={setItems}

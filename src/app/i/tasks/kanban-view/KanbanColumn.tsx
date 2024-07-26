@@ -30,12 +30,12 @@ export function KanbanColumn({ value, label, items, setItems }: IKanbanColumn) {
 					{...provided.droppableProps}
 				>
 					<div className={style.column}>
-						<div className={style.columnHeading}>{label}</div>
+						<div className='capitalize'>{label}</div>
 
 						{filterTasks(items, value)?.map((item, index) => (
 							<Draggable
 								key={item.id}
-								draggableId={item.id ? item.id : "id"}
+								draggableId={item.id ? item.id : 'id'}
 								index={index}
 							>
 								{provided => (
@@ -58,11 +58,7 @@ export function KanbanColumn({ value, label, items, setItems }: IKanbanColumn) {
 						{value !== 'completed' && !items?.some(item => !item.id) && (
 							<KanbanAddCardInput
 								setItems={setItems}
-								filteredDate={
-									FILTERS[value]
-										? FILTERS[value].format()
-										: undefined
-								}
+								filterDate={FILTERS[value] ? FILTERS[value].format() : undefined}
 							/>
 						)}
 					</div>

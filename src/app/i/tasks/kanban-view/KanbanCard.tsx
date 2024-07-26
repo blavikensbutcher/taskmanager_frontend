@@ -79,7 +79,7 @@ export function KanbanCard({ item, setItems }: IKanbanCard) {
 
 				<Controller
 					control={control}
-					name='piority'
+					name='priority'
 					render={({ field: { value, onChange } }) => (
 						<SingleSelect
 							data={['HIGH', 'MEDIUM', 'LOW'].map(item => ({
