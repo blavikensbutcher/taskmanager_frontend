@@ -18,7 +18,6 @@ export function Providers({ children }: Readonly<PropsWithChildren>) {
 	return (
 		<QueryClientProvider client={client}>
 			{children}
-			<ReactQueryDevtools initialIsOpen={false} />
 		</QueryClientProvider>
 	)
 }
