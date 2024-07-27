@@ -1,8 +1,11 @@
+import Cookies from 'js-cookie'
+
 import type { IAuthForm, IAuthResponse } from '@/types/auth.types'
 
 import { axiosClassic } from '@/api/interceptors'
 
 import {
+	EnumTokens,
 	removeFromStorage,
 	saveTokenStorage
 } from '@/services/auth-token.service'
@@ -13,8 +16,9 @@ export const authService = {
 			`/auth/${type}`,
 			data
 		)
-		if (response.data.accessToken)
+		if (response.data.accessToken) {
 			saveTokenStorage(response.data.accessToken)
+		}
 		return response
 	},
 
@@ -22,8 +26,7 @@ export const authService = {
 		const response = await axiosClassic.post<IAuthResponse>(
 			'/auth/login/access-token'
 		)
-		if (response.data.accessToken)
-			saveTokenStorage(response.data.accessToken)
+		if (response.data.accessToken) saveTokenStorage(response.data.accessToken)
 		return response
 	},
 

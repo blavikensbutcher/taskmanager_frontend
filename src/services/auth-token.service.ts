@@ -16,7 +16,7 @@ export const saveTokenStorage = (accessToken: string) => {
 		domain: 'localhost',
 		sameSite: 'strict',
 		expires: 1
-	})
+	});
 }
 
 export const removeFromStorage = () => {

@@ -19,6 +19,7 @@ export function TimeBlockingList() {
 	if (isLoading) return <Loader />
 
 	const {hoursLeft} = calcHoursLeft(items)
+
 	return (
 		<div>
 			<DndContext

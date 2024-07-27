@@ -1,7 +1,7 @@
 'use client'
 
 import { useMutation } from '@tanstack/react-query'
-import { useRouter } from 'next/navigation'
+import {redirect, useRouter} from 'next/navigation'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
@@ -25,6 +25,7 @@ export const Auth = () => {
 	const [isLoginForm, setIsLoginForm] = useState(false)
 
 	const { push } = useRouter()
+
 
 	const { mutate } = useMutation({
 		mutationKey: ['auth'],
