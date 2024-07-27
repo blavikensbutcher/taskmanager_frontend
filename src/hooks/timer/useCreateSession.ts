@@ -8,11 +8,10 @@ export const useCreateSession = () => {
 
 	const {
 		mutate,
-        isSuccess,
         isPending,
 	} = useMutation({
-		queryKey: ['create new session'],
-		queryFn: () => pomodoroService.createSession(),
+		mutationKey: ['create new session'],
+		mutationFn: () => pomodoroService.createSession(),
         onSuccess() {
             queryClient.invalidateQueries({
                 queryKey: ['get today session']

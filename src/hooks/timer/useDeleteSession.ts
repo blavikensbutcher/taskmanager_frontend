@@ -6,13 +6,13 @@ export const useDeleteSession = (onDeleteSuccess: () => void) => {
 	const queryClient = useQueryClient()
 
 	const { mutate: deleteSession, isPending: isDeletePending } = useMutation({
-		queryKey: ['delete session'],
-		queryFn: (id: string) => pomodoroService.deleteSession(id),
+		mutationKey: ['delete session'],
+		mutationFn: (id: string) => pomodoroService.deleteSession(id),
 		onSuccess() {
 			queryClient.invalidateQueries({
 				queryKey: ['get today session']
 			})
-			onDeleteSuccess(workInterval * 60)
+			onDeleteSuccess(workInterval / 60)
 		}
 	})
 

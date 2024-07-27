@@ -14,9 +14,9 @@
 	@apply rounded border border-border w-5 h-5 relative;
 
 	&::before {
-		@apply bg-primary rounded-l transition-all duration-300
+		@apply bg-primary rounded-l transition-all duration-300;
 
-    content: '';
+    	content: '';
 		position: absolute;
 		top: 0;
 		left: 0;

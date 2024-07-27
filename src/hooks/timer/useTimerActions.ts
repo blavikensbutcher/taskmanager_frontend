@@ -19,7 +19,6 @@ export function useTimerActions({
 	const { updateRound, isRoundPending } = useUpdateRound()
 
 	const pauseHandler = () => {
-		const totalSeconds = workInterval * 60 - secondsLeft
 
 		setIsRunning(false)
 
@@ -27,8 +26,8 @@ export function useTimerActions({
 			updateRound({
 				id: activeRound?.id,
 				data: {
-					totalSeconds,
-					isCompleted: Math.floor(totalSeconds * 60) >= workInterval
+					totalSeconds: secondsLeft,
+					isCompleted: Math.floor(secondsLeft / 60) >= workInterval
 				}
 			})
 		}

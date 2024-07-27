@@ -254,3 +254,9 @@ R
 "src/hooks/timer/useTimerActions.ts,5/1/511477abf6ed5ab695739ae6398188c241a991a8
 H
 src/types/timer.types.ts,1/5/158870af997ad3a269782732cfd17a25159e9762
+L
+src/app/i/timer/Pomodoro.tsx,3/7/37836416c6f0b5489ad2edc9c669fb1298d0bf42
+T
+$src/app/i/timer/Pomodoro.module.scss,5/6/56ac11066b95fbfbddddd3e6364a8ea7cdaa05ab
+Q
+!src/app/i/dashboard/Dashboard.tsx,d/7/d7332fb28afdcafa44a9e07cd24d90ef29f77bfe
