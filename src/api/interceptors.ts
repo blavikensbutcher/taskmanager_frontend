@@ -8,7 +8,7 @@ import {
 } from '@/services/auth-token.service'
 import { authService } from '@/services/auth.service'
 
-const BASE_URL: string = process.env.NEXT_PUBLIC_BASE_URL
+const BASE_URL: string = process.env.NEXT_PUBLIC_BASE_URL || "https://rest-nestjs.onrender.com/api"
 
 
 const options: CreateAxiosDefaults = {
