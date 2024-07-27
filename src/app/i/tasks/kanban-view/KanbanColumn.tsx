@@ -6,7 +6,7 @@ import {
 } from '@hello-pangea/dnd'
 import { Dispatch, SetStateAction } from 'react'
 
-import { ITaskResponse } from '@/types/task.types'
+import type { ITaskResponse } from '@/types/task.types'
 
 import style from './KanbanView.module.scss'
 import { FILTERS } from '@/app/i/tasks/columns.data'

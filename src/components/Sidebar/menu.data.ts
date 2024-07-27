@@ -1,5 +1,13 @@
 import type {IMenuItem} from "@/components/Sidebar/menu.interface";
-import {CalendarRange, KanbanSquare, LayoutDashboard, Settings, Timer} from "lucide-react";
+import {
+    CalendarRange,
+    KanbanSquare,
+    LayoutDashboard,
+    MessageSquareDotIcon,
+    MessageSquareIcon,
+    Settings,
+    Timer
+} from "lucide-react";
 import {DASHBOARD_PAGES} from "@/config/pages-url.config";
 
 export const MENU: IMenuItem[] = [
@@ -21,6 +29,11 @@ export const MENU: IMenuItem[] = [
         icon: CalendarRange,
         link: DASHBOARD_PAGES.TIME_BLOCKS,
         name: 'Time Blocking'
+    },
+    {
+        icon: MessageSquareDotIcon,
+        link: DASHBOARD_PAGES.COMMENTS,
+        name: 'Comments'
     },
     {
         icon: Settings,

@@ -260,3 +260,23 @@ T
 $src/app/i/timer/Pomodoro.module.scss,5/6/56ac11066b95fbfbddddd3e6364a8ea7cdaa05ab
 Q
 !src/app/i/dashboard/Dashboard.tsx,d/7/d7332fb28afdcafa44a9e07cd24d90ef29f77bfe
+P
+ src/app/i/time-blocking/page.tsx,3/5/3594943f7f79aa74bab42cf90b31199cbfeed583
+N
+src/app/i/time-blocks/page.tsx,5/d/5da4e9e36111f50a5c87ca582cb3debaf184070f
+X
+(src/constants/time-blocks/colors.data.ts,9/8/98a95bcc536bd1c22e10b1616f24febcf80ab1e6
+[
++src/hooks/time-blocks/useCreateTimeBlock.ts,9/a/9a0b15cbb5d3789c2e95f64d1b0f22e2f9e8f80a
+[
++src/hooks/time-blocks/useUpdateTimeBlock.ts,0/e/0e400ef8f5e90af6df134ce370ee4dec64875a85
+_
+/src/app/i/time-blocks/form/TimeBlockingForm.tsx,1/c/1cdb4f15e79a8c412993aadf2ddc829a9f025418
+V
+&src/app/i/time-blocks/TimeBlocking.tsx,9/b/9b8dd2985ef6c4fc1fa6fd900e9ccd5c272d58e5
+K
+src/app/i/comments/page.tsx,0/1/0122af2e8f87b495f2084a2ccc6458d62eb95095
+^
+.src/hooks/time-blocks/useTimeBlocksSortable.ts,9/8/9893a0f681f8ecffc721a1e44c27176164da8cb9
+V
+&src/hooks/time-blocks/useTimeBlocks.ta,5/9/596a05167f98b13c634cbbfcef44195e48b8c48d

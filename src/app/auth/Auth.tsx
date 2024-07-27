@@ -10,7 +10,7 @@ import { Heading } from '@/components/ui/Heading'
 import { Button } from '@/components/ui/buttons/Button'
 import { Field } from '@/components/ui/fields/Fields'
 
-import { IAuthForm } from '@/types/auth.types'
+import type { IAuthForm } from '@/types/auth.types'
 
 import { DASHBOARD_PAGES } from '@/config/pages-url.config'
 

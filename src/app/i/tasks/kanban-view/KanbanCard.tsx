@@ -9,7 +9,7 @@ import { DatePicker } from '@/components/ui/task-edit/date-picker/DatePicker'
 import { SingleSelect } from '@/components/ui/task-edit/single-select/SingleSelect'
 import { TransparentField } from '@/components/ui/transparent-field/TransparentField'
 
-import { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
+import type { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
 
 import { useDeleteTask } from '@/hooks/tasks/useDeleteTask'
 import { useTaskDebounce } from '@/hooks/tasks/useTaskDebounce'

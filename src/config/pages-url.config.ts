@@ -6,6 +6,7 @@ class DASHBOARD {
     HABITS = `${this.root}/habits`
     TIMER = `${this.root}/timer`
     TIME_BLOCKS = `${this.root}/time-blocks`
+    COMMENTS = `${this.root}/comments`
     SETTINGS = `${this.root}/settings`
 }
 

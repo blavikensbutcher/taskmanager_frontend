@@ -1,4 +1,4 @@
-import { IPomodoroRoundResponse } from '@/types/pomodoro.types'
+import type { IPomodoroRoundResponse } from '@/types/pomodoro.types'
 import type { ITimerState } from '@/types/timer.types'
 
 import { useLoadSettings } from '@/hooks/timer/useLoadSettings'

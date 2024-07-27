@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 import { Field } from '@/components/ui/fields/Fields'
 
-import { TypeUserForm } from '@/types/auth.types'
+import type { TypeUserForm } from '@/types/auth.types'
 
 import { useLoadData } from '@/hooks/useLoadData'
 import { useUpdateSettings } from '@/hooks/useUpdateSettings'

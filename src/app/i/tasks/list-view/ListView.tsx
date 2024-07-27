@@ -8,7 +8,7 @@ import { Checkbox } from '@/components/ui/checkboxs/Checkbox'
 import { DatePicker } from '@/components/ui/task-edit/date-picker/DatePicker'
 import { SingleSelect } from '@/components/ui/task-edit/single-select/SingleSelect'
 
-import { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
+import type { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
 
 import { useDeleteTask } from '@/hooks/tasks/useDeleteTask'
 import { useTaskDebounce } from '@/hooks/tasks/useTaskDebounce'
