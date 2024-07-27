@@ -21,8 +21,8 @@ export const TimeBlockingForm = () => {
 	const { updateTimeBlock } = useUpdateTimeBlock(existsId)
 
 	const onSubmit: SubmitHandler<TypeTimeBlockFormState> = data => {
-		const { id, color, ...rest } = data
-		const dto = { ...rest, color: color || undefined }
+		const { id, color,order, ...rest } = data
+		const dto = { ...rest, color: color || undefined, order: order || 1 }
 
 		if (id) {
 			updateTimeBlock({
@@ -62,8 +62,8 @@ export const TimeBlockingForm = () => {
 					valueAsNumber: true
 				})}
 				id='duration'
-				label='Enter duration (sec.):'
-				placeholder='Enter duration (sec.):'
+				label='Enter duration (min.):'
+				placeholder='Enter duration (min.):'
 				isNumber
 				extra='mb-4'
 			/>
