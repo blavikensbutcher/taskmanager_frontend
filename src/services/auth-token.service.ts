@@ -7,15 +7,21 @@ export enum EnumTokens {
 
 export const getAccessToken = () => {
 	const accessToken = Cookies.get(EnumTokens.ACCESS_TOKEN)
-	console.log('getAccessToken', accessToken)
 	return accessToken || null
 }
 
 export const saveTokenStorage = (accessToken: string) => {
+
+	console.log("saveTokenStorage", accessToken)
+
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
 		sameSite: 'none',
 		expires: 1
 	});
+
+	const ismounteraccess = Cookies.get(EnumTokens.ACCESS_TOKEN)
+
+	console.log('ismounteraccess', ismounteraccess)
 }
 
 export const removeFromStorage = () => {
