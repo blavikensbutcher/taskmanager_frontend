@@ -16,6 +16,7 @@ export const authService = {
 			`/auth/${type}`,
 			data
 		)
+		console.log("MAIN", response.data.accessToken)
 		if (response.data.accessToken) {
 			saveTokenStorage(response.data.accessToken)
 		}
@@ -26,7 +27,9 @@ export const authService = {
 		const response = await axiosClassic.post<IAuthResponse>(
 			'/auth/login/access-token'
 		)
-		if (response.data.accessToken) saveTokenStorage(response.data.accessToken)
+		if (response.data.accessToken) {
+			saveTokenStorage(response.data.accessToken)
+		}
 		return response
 	},
 
