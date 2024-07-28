@@ -11,16 +11,11 @@ export const getAccessToken = () => {
 }
 
 export const saveTokenStorage = (accessToken: string) => {
-
-	console.log("saveTokenStorage", accessToken)
-
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
+		sameSite: 'lax',
 		expires: 1
 	});
 
-	const ismounteraccess = Cookies.get(EnumTokens.ACCESS_TOKEN)
-
-	console.log('ismounteraccess', ismounteraccess)
 }
 
 export const removeFromStorage = () => {
