@@ -65,7 +65,7 @@ export function TimeBlock({ item }: { item: ITimeBlockResponse }) {
 						onClick={() => deleteTimeBlock()}
 						className='opacity-50 transition-opacity hover:opacity-100'
 					>
-						{isDeletePending ? <Loader size={16} /> : <Trash size={16} />}
+						{isDeletePending ? <Loader /> : <Trash size={16} />}
 					</button>
 				</div>
 			</div>

@@ -102,7 +102,7 @@ export function ListView({ item, setItems }: IListView) {
 							: setItems(prev => prev?.slice(0, -1))
 					}
 				>
-					{isDeletePending ? <Loader size={15} /> : <Trash size={15} />}
+					{isDeletePending ? <Loader /> : <Trash size={15} />}
 				</button>
 			</div>
 		</div>

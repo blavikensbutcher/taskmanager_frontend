@@ -17,15 +17,15 @@ import {useCreateSession} from "@/hooks/timer/useCreateSession";
 
 export function Pomodoro() {
 	const timerState = useTimer()
-	const { sessionResponse, isLoading, workInterval } =
-		useTodaySession(timerState)
+	const { sessionResponse, isLoading, workInterval } = useTodaySession(timerState)
 	const rounds = sessionResponse?.data.PomodoroRound
 	const actions = useTimerActions({ ...timerState, rounds })
+
 
 	const { mutate, isPending} = useCreateSession()
 
 	const { deleteSession, isDeletePending } = useDeleteSession(() =>
-		timerState.setSecondsLeft(workInterval * 60)
+		timerState.setSecondsLeft(workInterval !== undefined ?  workInterval * 60 : 300)
 	)
 
 	return (
@@ -42,6 +42,7 @@ export function Pomodoro() {
 				<>
 					<PomodoroRounds
 						rounds={rounds}
+
 						nextRoundHandler={actions.nextRoundHandler}
 						prevRoundHandler={actions.prevRoundHandler}
 						activeRounds={timerState.activeRound}

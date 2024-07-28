@@ -1,16 +1,28 @@
 import { useQuery } from '@tanstack/react-query'
-import { useEffect } from 'react'
-
-import type { ITimerState } from '@/types/timer.types'
-
+import { Dispatch, SetStateAction, useEffect } from 'react'
 import { useLoadSettings } from '@/hooks/timer/useLoadSettings'
-
 import { pomodoroService } from '@/services/pomodoro.service'
+import {IPomodoroSessionResponse, IPomodoroRoundResponse, Pomodoro} from '@/types/pomodoro.types'
+import {AxiosResponse} from "axios";
+
+interface IUseTodaySession {
+	setActiveRound?: Dispatch<SetStateAction<IPomodoroRoundResponse | undefined>>,
+	setSecondsLeft?: Dispatch<SetStateAction<number>>
+}
+
+interface IUseTodaySessionReturn {
+	sessionResponse: IPomodoroSessionResponse | undefined;
+	isLoading: boolean;
+	refetch: () => void;
+	isSuccess: boolean;
+	workInterval: number | undefined;
+
+}
 
 export const useTodaySession = ({
-	setActiveRound,
-	setSecondsLeft
-}): ITimerState => {
+									setActiveRound,
+									setSecondsLeft
+								}: IUseTodaySession): IUseTodaySessionReturn => {
 	const { workInterval } = useLoadSettings()
 
 	const {
@@ -18,24 +30,24 @@ export const useTodaySession = ({
 		isLoading,
 		refetch,
 		isSuccess
-	} = useQuery({
+	} = useQuery<AxiosResponse<IPomodoroSessionResponse>>({
 		queryKey: ['get today session'],
 		queryFn: () => pomodoroService.getTodaySession()
 	})
 
-	const rounds = sessionResponse?.data.PomodoroRound
 
+	const rounds = sessionResponse?.data.PomodoroRound
 
 	useEffect(() => {
 		if (isSuccess && rounds) {
 			const activeRound = rounds.find(round => !round.isCompleted)
-			setActiveRound(activeRound)
+			if (setActiveRound) setActiveRound(activeRound)
 
-			if (activeRound && activeRound.totalSeconds !== 0) {
+			if (activeRound && activeRound.totalSeconds !== 0 && setSecondsLeft) {
 				setSecondsLeft(activeRound.totalSeconds)
 			}
 		}
-	}, [isSuccess, rounds])
+	}, [isSuccess, rounds, setActiveRound, setSecondsLeft])
 
 	return { sessionResponse, isLoading, refetch, isSuccess, workInterval }
 }

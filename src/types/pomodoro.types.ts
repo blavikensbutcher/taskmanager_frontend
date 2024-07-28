@@ -10,6 +10,24 @@ export interface IPomodoroSessionResponse extends IRootTypes {
 	rounds?: IPomodoroRoundResponse[]
 }
 
+export interface PomodoroRound {
+	id: string;
+	createdAt: string;
+	updatedAt: string;
+	isCompleted: boolean;
+	totalSeconds: number;
+	pomodoroId: string;
+}
+
+export  interface Pomodoro {
+	id: string;
+	createdAt: string;
+	updatedAt: string;
+	isCompleted: boolean;
+	userId: string;
+	PomodoroRound: PomodoroRound[];
+}
+
 export type TypePomodoroSessionState = Partial<
 	Omit<IPomodoroSessionResponse, 'id' | 'createdAt' | 'updatedAt'>
 >

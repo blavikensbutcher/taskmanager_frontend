@@ -304,3 +304,5 @@ N
 src/helpers/calc-hours-left.ts,2/7/27079700446a60cb6bf23a6f0c0a259110f2e9fc
 B
 .env.local.example,9/5/9558c8cde3b80d95bda0dc569658b6913c24dc24
+>
+.eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3

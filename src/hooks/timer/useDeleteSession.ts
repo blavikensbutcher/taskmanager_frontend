@@ -12,7 +12,6 @@ export const useDeleteSession = (onDeleteSuccess: () => void) => {
 			queryClient.invalidateQueries({
 				queryKey: ['get today session']
 			})
-			onDeleteSuccess(workInterval / 60)
 		}
 	})
 
