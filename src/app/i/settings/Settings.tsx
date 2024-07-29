@@ -100,7 +100,8 @@ export function Settings() {
 							placeholder='Enter intervals count(max 10):'
 							isNumber
 							{...register('intervalCount', {
-								valueAsNumber: true
+								valueAsNumber: true,
+								max: 10
 							})}
 							extra='mb-6'
 						/>
