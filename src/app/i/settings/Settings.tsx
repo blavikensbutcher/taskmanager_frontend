@@ -2,6 +2,7 @@
 
 import { SubmitHandler, useForm } from 'react-hook-form'
 
+import { Button } from '@/components/ui/buttons/Button'
 import { Field } from '@/components/ui/fields/Fields'
 
 import type { TypeUserForm } from '@/types/auth.types'
@@ -10,7 +11,6 @@ import { useLoadData } from '@/hooks/useLoadData'
 import { useUpdateSettings } from '@/hooks/useUpdateSettings'
 
 import styles from './settings.module.css'
-import {Button} from "@/components/ui/buttons/Button";
 
 export function Settings() {
 	const { register, handleSubmit, reset, setValue } = useForm<TypeUserForm>({
@@ -19,19 +19,20 @@ export function Settings() {
 
 	const { mutate, isPending } = useUpdateSettings()
 
-	const onSubmit: SubmitHandler<TypeUserForm> = (data) => {
+	const onSubmit: SubmitHandler<TypeUserForm> = data => {
 		const { password, ...rest } = data
 
-		mutate({
-			...rest,
-			password: password || undefined
-		},
+		mutate(
+			{
+				...rest,
+				password: password || undefined
+			},
 			{
 				onSuccess: () => {
 					setValue('password', '')
 				}
 			}
-			)
+		)
 	}
 
 	useLoadData(reset)
@@ -106,7 +107,10 @@ export function Settings() {
 					</div>
 				</div>
 
-				<Button type='submit' disabled={isPending}>
+				<Button
+					type='submit'
+					disabled={isPending}
+				>
 					Save
 				</Button>
 			</form>

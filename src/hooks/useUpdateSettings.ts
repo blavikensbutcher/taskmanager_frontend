@@ -14,6 +14,13 @@ export function useUpdateSettings() {
 		onSuccess() {
 			toast.success('Profile successfully updated')
 			queryClient.invalidateQueries({ queryKey: ['profile'] })
+		},
+		onError(e) {
+			toast.error("Update unsuccessful", {
+				style: {
+					backgroundColor: "red"
+				}
+			})
 		}
 	})
 
