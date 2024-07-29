@@ -101,7 +101,10 @@ export function Settings() {
 							isNumber
 							{...register('intervalCount', {
 								valueAsNumber: true,
-								max: 10
+								max: {
+									value: 10,
+									message: "Interval must be less than 10"
+								},
 							})}
 							extra='mb-6'
 						/>
