@@ -14,7 +14,7 @@ export const Sidebar = () => {
 		<aside className={styles.sidebar}>
 			<div>
 				<Link
-					href='/i/dashboard'
+					href='/i'
 					className={styles.link}
 				>
 					<GanttChartSquare
