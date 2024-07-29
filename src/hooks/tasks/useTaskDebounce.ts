@@ -43,7 +43,7 @@ export function useTaskDebounce({ watch, itemId }: IUseTaskDebounce) {
 		})
 
 		return () => unsubscribe()
-	}, [watch(), debounceUpdateTask, debounceCreateTask])
+	}, [debounceUpdateTask, debounceCreateTask, watch, itemId])
 
 	return {}
 }
