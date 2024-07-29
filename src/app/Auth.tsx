@@ -35,8 +35,8 @@ export const Auth = () => {
 			reset()
 			push(DASHBOARD_PAGES.HOME)
 		},
-		onError() {
-			toast.error('Server is busy')
+		onError(e) {
+			toast.success('Something went wrong :(')
 		}
 	})
 
