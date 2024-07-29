@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest, response: NextResponse) {
 
 	const refreshToken = cookies.get(EnumTokens.REFRESH_TOKEN)?.value
 
-	const isAuthPage = url.includes('/')
+	const isAuthPage = url.includes('https://taskmanager-frontend-omega.vercel.app/')
 
 	if (isAuthPage && refreshToken) return NextResponse.redirect(new URL(DASHBOARD_PAGES.HOME, url))
 
@@ -17,7 +17,7 @@ export async function middleware(request: NextRequest, response: NextResponse) {
 	}
 
 	if (!refreshToken) {
-		return NextResponse.redirect(new URL('/', request.url))
+		return NextResponse.redirect(new URL('https://taskmanager-frontend-omega.vercel.app/', request.url))
 	}
 
 	return NextResponse.next()
