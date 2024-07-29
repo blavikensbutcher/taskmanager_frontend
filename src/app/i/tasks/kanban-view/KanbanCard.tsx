@@ -15,6 +15,7 @@ import { useDeleteTask } from '@/hooks/tasks/useDeleteTask'
 import { useTaskDebounce } from '@/hooks/tasks/useTaskDebounce'
 
 import style from './KanbanView.module.scss'
+import {useOutside} from "@/hooks/useOutside";
 
 interface IKanbanCard {
 	item: ITaskResponse
@@ -30,6 +31,7 @@ export function KanbanCard({ item, setItems }: IKanbanCard) {
 			priority: item?.priority
 		}
 	})
+
 
 	useTaskDebounce({ watch, itemId: item?.id })
 

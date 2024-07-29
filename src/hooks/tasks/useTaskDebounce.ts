@@ -19,16 +19,15 @@ export function useTaskDebounce({ watch, itemId }: IUseTaskDebounce) {
 	const debounceCreateTask = useCallback(
 		debounce((formData: TypeTaskFormState) => {
 			createTask(formData)
-		}, 1000),
+		}, 3000),
 		[]
 	)
 
-	const debounceUpdateTask = useCallback(
-		debounce((formData: TypeTaskFormState) => {
-			updateTask({ id: itemId, data: formData })
-		}, 1000),
-		[]
-	)
+	const debounceUpdateTask = useCallback(function (
+		formData: TypeTaskFormState
+	) {
+		updateTask({ id: itemId, data: formData })
+	}, [itemId, updateTask])
 
 	useEffect(() => {
 		const { unsubscribe } = watch(formData => {
