@@ -19,7 +19,7 @@ export function useTaskDebounce({ watch, itemId }: IUseTaskDebounce) {
 	const debounceCreateTask = useCallback(
 		debounce((formData: TypeTaskFormState) => {
 			createTask(formData)
-		}, 3000),
+		}, 7000),
 		[]
 	)
 
