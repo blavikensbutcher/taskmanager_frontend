@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pomodoro Task Manager
 
-## Getting Started
+Цей додаток допомогає користувачам правильно менеджети свій час, працювати з Pomodoro таймером та розставляти собі задачі на день/тиждень/місяць
 
-First, run the development server:
+- [Жива сторінка](https://taskmanager-frontend-omega.vercel.app/)
+- [Фронтенд](https://github.com/blavikensbutcher/taskmanager_frontend)
+- [Бекенд](https://github.com/blavikensbutcher?tab=repositories)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### Ключові особливості:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Pomodoro Timer. Цей метод використовує таймер для того, щоб розбити роботу на інтервали, які називаються «pomodori» (італійське слово, що означає «помідори») які розділені короткими перервами. (50 хвилин роботи / 10 відпочінку за замовчуванням)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Time blocking. Це спосіб розставити собі плани на день і виділити їм стільки часу, скільки потрібно.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Tasks. Класичний задачник, де можна додати свої плани на сьогодні, на неділю, наступну неділю чи місяць. Їх можна зручно переміщувати між інтервалами часу і час зміниться самостійно, також можна виставити приорітет наскільки ця задача важлива. Тут є два види списка перелік так Kanban дошка.
 
-## Learn More
+## Технології, які використовувалися для створення додатка
 
-To learn more about Next.js, take a look at the following resources:
+### TanStack Query <img src="https://tanstack.com/_build/assets/logo-color-100w-lPbOTx1K.png" width=30>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- це бібліотека для управління асинхронними запитами в React-додатках. Вона забезпечує кешування, синхронізацію стану, фонове оновлення та багато інших функцій для зручного керування даними.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Nest.js <img src="https://nestjs.com/logo-small-gradient.76616405.svg" width=30>
 
-## Deploy on Vercel
+- це прогресивний фреймворк для Node.js, який використовує TypeScript і забезпечує модульну архітектуру для розробки серверних додатків. Nest.js базується на концепціях та шаблонах, які використовуються в Angular.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Next.js <img src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" width=30>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Фреймворк для React, який дозволяє створювати серверні та клієнтські рендеринг-додатки з мінімальною конфігурацією. Він підтримує статичну генерацію сайтів, серверний рендеринг, API-роути та багато іншого.
+
+### Axios <img src="https://logowik.com/content/uploads/images/axios5736.logowik.com.webp" width=30>
+
+- популярна бібліотека для виконання HTTP-запитів у браузері та Node.js. Вона забезпечує простий API для роботи з запитами та обробкою відповідей, підтримує перехоплення запитів/відповідей і автоматично обробляє JSON-дані.
+
+### Cookie Parser <img src="https://cdn-icons-png.flaticon.com/512/1689/1689340.png" width=30>
+
+- Middleware для Node.js, який дозволяє парсити cookies, отримані з HTTP-запитів. Він допомагає легко працювати з куками у ваших додатках, забезпечуючи зручний доступ до їх значень.
+
+### Lodash <img src="https://static-00.iconduck.com/assets.00/lodash-icon-2048x1864-lr0l3sao.png" width=30>
+
+- це потужна бібліотека для JavaScript, яка надає безліч корисних функцій для роботи з масивами, об'єктами, рядками тощо. Вона допомагає скоротити код і підвищити його читабельність, надаючи зручні методи для виконання поширених операцій.
+
+### Tailwind <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width=30>
+
+- Утилітарно-орієнтована CSS фреймворк, яка дозволяє швидко створювати адаптивні та стильні інтерфейси без написання користувацького CSS. Вона надає набір класів, які можна комбінувати для створення складних компонентів прямо в HTML.
+
+## Документація доступна за посиланням
+
+ <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*C_u3RtbZnYzRI10IUWbPfg.png" width=100>
+
+[Docs](https://rest-nestjs.onrender.com/docs)
+
+## Docker compose
+
+`docker-compose run --build` - to run docker container
+
+## The scripts from package.json
+
+`npm run start:dev` - to run server using nodemon
+
+## The structure of the template
+
+**.env.example** - the example of the `.env` file that contains global variables of the service. `.env.example` should be without production data. Should be in GIT;
+
+**.env** - the copied file of `.env.example` && `.env.local.example` with real data of variables. Should be excluded from GIT;
+
+**.gitignore** - patterns of files or folders to ignore checking git changes;
+
+**main.ts** - the file to start the service.
+
+**package.json** - the main file of information, and configuration, and dependencies of the service;
+
+**package-lock.json** - the file from `package.json` that contains all information about all node modules that were installed like dependencies and
+devDependencies;

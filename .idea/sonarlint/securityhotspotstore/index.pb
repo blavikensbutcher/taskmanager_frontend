@@ -33,16 +33,8 @@ K
 src/types/pomodoro.types.ts,b/c/bc771b868767f45653267aee039b373c3a91d61a
 G
 src/api/interceptors.ts,b/b/bb97cfdd7c6619cb74fe9fc1e2cd1462f23b4f86
-4
-.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
-<
-.env.example,d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871
 @
 src/api/error.ts,e/d/ed04814a6d06b17c7fbc65a59ab6673f9bcd8333
-Q
-!src/service/auth-token.service.ts,3/9/39ec6ad8f38b888eb7ef339f27610ae8b7e08766
-K
-src/service/auth.service.ts,4/4/4476b80c2e4dd0816d17d0173d72cb7df61e369c
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -56,18 +48,12 @@ R
 "src/services/time-block.service.ts,8/8/8872b4804b23b95fc675d9bc6b8e7c9ebb1ec158
 L
 src/services/task.service.ts,0/b/0bdc825cdc352b87deb6c0233a602472e494923c
-E
-src/app/auth/page.tsx,6/3/63ed1e9e4326e531c8c47a07d9a08a3e5f2ee9f7
 =
 tsconfig.json,6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0
 ?
 next.config.mjs,d/f/df8bd0b91ecb778bf2a1b031c7677390c7442bb4
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-E
-src/app/auth/Auth.tsx,7/c/7c79af971343dbd09315e52773635ec419fef0d7
-L
-src/app/auth/auth.module.css,9/d/9debaa76fbf195e731d66491107f028950761e2c
 S
 #src/components/ui/fields/Fields.tsx,c/e/ce1d60020c3e5e67809a48d511fb56e64a8fe3f1
 Z
@@ -86,16 +72,10 @@ B
 src/app/i/page.tsx,2/c/2cfe238dde27e45cbf3df89332883ab612a4600b
 R
 "src/services/auth-token.service.ts,5/c/5c55bdf0d80ca06991ca54e8110431d01d458fb8
-M
-src/middlewares/middleware.ts,0/a/0a65da2120b0c18591e604fcff515e0870f41ea0
 A
 src/middleware.ts,c/8/c877023f10ac16a1ece2899a03aec3e05df9896c
-H
-src/app/i/Statistics.tsx,6/1/618596e17f68ba1893421b2a959f88ba2cc50d3b
 G
 src/hooks/useProfile.ts,b/5/b5735ae276a2d2903b520fa363ec0244422d656b
-O
-src/app/i/statistics.module.css,2/c/2c70dae513ca5ce12970246fe6adb7e7ca210970
 D
 src/app/i/layout.tsx,9/8/98186cecc5122141bdcdd78326c6098c1961080f
 c
@@ -108,8 +88,6 @@ Y
 )src/components/header/profile/Profile.tsx,0/e/0e2edee5a6b69bd6e96627c91e2279a3a42e9317
 d
 4src/components/dashboard-layout/dashboard.module.css,2/2/22999b73cdc21da08569f8e29eda1007d4c1e125
-W
-'src/components/header/header.module.css,0/5/05898bd823dc5f4bbd753b83aa1a19a1fd70495a
 ]
 -src/components/global-loader/GlobalLoader.tsx,1/7/17c49ff42b4c1d0beb5d557c871123ebec322df5
 e
@@ -144,28 +122,18 @@ N
 src/hooks/useUpdateSettings.ts,2/4/24b7045040003b44f90c7d0659ca054542d4d2ab
 H
 src/hooks/useLoadData.ts,b/5/b5185c3a86c2bfc6a892f1c1982aea413f670655
-W
-'src/app/i/settings/settings.module.xcss,8/8/882393c1ee91185e47e71a26eb644f43db39f2d3
 V
 &src/app/i/settings/settings.module.css,6/1/61bd1a0241db02e073eff8da4b10aaffcf437ec1
-G
-src/app/i/Dashboard.tsx,5/a/5a7e635bc4c8679f13bf07794ea3a8c5d6bfb7df
 H
 src/app/i/tasks/page.tsx,2/6/26553bfd8b19cb655b9d856027d187de6903f898
-M
-src/app/i/tasks/TasksView.tsx,3/5/35c95e8190246982ba4bb45e64ae00c1a13ed280
 V
 &src/app/i/tasks/list-view/ListView.tsx,d/f/dfb44d4af330d110563bc2d22c8a3bd855f7e57c
-E
-src/hooks/useTasks.ts,a/1/a10c4c216ce981bc86556497cc85d60e2b933af4
 Q
 !src/hooks/tasks/useUpdateTasks.ts,c/5/c54d649e50493f9b9868bc76359c071b88cc32ff
 M
 src/hooks/tasks/useTaskDnd.ts,2/6/26dbdacaf3e2dde68776d31661add9148902cdff
 O
 src/app/i/tasks/columns.data.ts,a/f/af2f550447073d6fd0c824d986cb0325710a3b15
-T
-$src/app/i/tasks/list-row/ListRow.tsx,a/e/aef17a8003c6b6b7ddb47263f2f94157d1eb6369
 f
 6src/components/ui/task-edit/date-picker/DatePicker.tsx,b/5/b5a71489c3a76e4b30295e8566fc266f057354bb
 g
@@ -176,16 +144,12 @@ m
 =src/components/ui/task-edit/date-picker/DatePickerCaption.tsx,d/f/df72345663bd8640d127110368047fbbfe655af5
 j
 :src/components/ui/task-edit/single-select/SingleSelect.tsx,3/3/33e3d2426ec63a49dd65f5dd079417b203fc9e32
-J
-src/hooks/useCreateTask.ts,b/f/bf073b6fcc19c493dcadd1eb2f3598180cbaa251
 B
 postcss.config.mjs,a/a/aaf1cf9fa3c8ee0e6c766e4a626ddaf9bc1cbb40
 P
  src/hooks/tasks/useDeleteTask.ts,1/d/1d6545d86cf79b9f934429d947952de5f6100443
 R
 "src/hooks/tasks/useTaskDebounce.ts,b/b/bb805cde0ef4e214a848ad9608e82818a20730bd
-]
--src/app/i/tasks/list-view/ListView.module.css,2/9/29ba748da6b32ba88e9f74819964fb8b3dc432b7
 ^
 .src/app/i/tasks/list-view/ListView.module.scss,f/9/f936583e322ea4d03431c8b98e0cb52fa8584513
 h
@@ -204,8 +168,6 @@ K
 ,src/components/ViewSwitcher/ViewSwitcher.tsx,5/f/5f1df6ba3a3efef7bb1fb575d9844eb977b1fe72
 d
 4src/components/ViewSwitcher/ViewSwitcher.module.scss,2/9/292d55f0696ad4a26103d5f541c87a6bc444fb17
-R
-"src/app/i/tasks/list-view/View.tsx,c/a/cad0de2b69ad876fa375442ef31ccebe02cddac1
 H
 src/app/i/tasks/View.tsx,5/1/513d2026ac41c0a09219c2820c2d222a20b3cc08
 L
@@ -220,22 +182,16 @@ Z
 *src/app/i/tasks/kanban-view/KanbanCard.tsx,3/1/31ab76181717413a50cf311b16cfb0144419c19c
 \
 ,src/app/i/tasks/kanban-view/KanbanColumn.tsx,8/7/87bd91bb2085cdca04eff5e3a7f3145f0aa03069
-a
-1src/app/i/tasks/kanban-view/KanbanAddRowInput.tsx,9/0/90d795d25c45740600ed9eb1545d797ca09b7a7b
 b
 2src/app/i/tasks/kanban-view/KanbanAddCardInput.tsx,d/4/d4a5fb90c6143683f54b3e68e1bf5473393d8d55
 H
 src/app/i/timer/page.tsx,8/8/8890921218ceeab7be6aee436d5c988e96678ace
 Q
 !src/hooks/timer/useUpdateRound.ts,1/6/164d618847798b5a1ad25cf39d39c15ea6bec16f
-Y
-)src/app/i/timer/PomodoroRound.module.scss,4/5/45043df9953e75be2dabc6ec1977ffee21dba773
 `
 0src/app/i/timer/rounds/PomodoroRound.module.scss,b/0/b04b725e75a9602bbfc3d8e7f90b646e9eba2400
 Y
 )src/app/i/timer/rounds/PomodoroRounds.tsx,d/4/d4bc063ac5f431797f7e7141d2ec49535e2a38e8
-O
-src/hooks/timer/useLoadSettings,8/2/821792ee5bba7950800448ae0773fbf327440d5b
 R
 "src/hooks/timer/useLoadSettings.ts,1/2/12fd8df8dfd817f9deebd57bea5c4c5464c52c01
 R
@@ -244,8 +200,6 @@ S
 #src/hooks/timer/useCreateSession.ts,6/3/636edebf3d85db71aa4a0a2efbb07d65eb9d5772
 S
 #src/hooks/timer/useDeleteSession.ts,9/f/9f0f3b939953410f3633ca203d9ea79ffe77a829
-G
-src/helpers/format-time,7/5/75be1603234f1135d00dc3a94ecd29aba9c142e4
 J
 src/helpers/format-time.ts,3/2/32bab44f752d4d839c7c2bd05c3c85403959d295
 K
@@ -260,8 +214,6 @@ T
 $src/app/i/timer/Pomodoro.module.scss,5/6/56ac11066b95fbfbddddd3e6364a8ea7cdaa05ab
 Q
 !src/app/i/dashboard/Dashboard.tsx,d/7/d7332fb28afdcafa44a9e07cd24d90ef29f77bfe
-P
- src/app/i/time-blocking/page.tsx,3/5/3594943f7f79aa74bab42cf90b31199cbfeed583
 N
 src/app/i/time-blocks/page.tsx,5/d/5da4e9e36111f50a5c87ca582cb3debaf184070f
 X
@@ -279,19 +231,9 @@ K
 ^
 .src/hooks/time-blocks/useTimeBlocksSortable.ts,9/8/9893a0f681f8ecffc721a1e44c27176164da8cb9
 V
-&src/hooks/time-blocks/useTimeBlocks.ta,5/9/596a05167f98b13c634cbbfcef44195e48b8c48d
-V
 &src/hooks/time-blocks/useTimeBlocks.ts,8/6/86829b92756c058a085be3e3ca0fa2852cf6264d
 X
 (src/hooks/time-blocks/useTimeBlockDnd.ts,4/0/404933a09b006a60e5eec734ac6d5da62beeef45
-T
-$src/hooks/time-blocks/useCalcTime.ts,8/f/8f54c206cf99a257676f112b43578900b3e21668
-K
-src/helpers/calcLeftTime.ts,c/7/c761572f8d798eef59d939b2bde42af5b559db82
-M
-src/helpers/calc-left-time.ts,1/0/102565b6d6eb02db2891b8ee5b6b1b3931826c5d
-I
-src/helpers/hours-left.ts,1/7/17ee24d78b2faab45a46b3c957c9989843bc6f4e
 [
 +src/hooks/time-blocks/useDeleteTimeBlock.ts,c/e/cece556892566bbf4439672e7aef0da761f4f875
 S
@@ -306,7 +248,5 @@ B
 .env.local.example,9/5/9558c8cde3b80d95bda0dc569658b6913c24dc24
 >
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
-<
-src/Auth.tsx,d/d/ddd09b2c915b299db543e6eefeaf592b3f763e79
 @
 src/app/Auth.tsx,4/4/4428bdbca42ffaedc9c0f3e41fa2ad56ffc0e887
