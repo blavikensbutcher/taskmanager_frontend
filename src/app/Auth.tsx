@@ -1,7 +1,7 @@
 'use client'
 
 import { useMutation } from '@tanstack/react-query'
-import {useRouter} from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
@@ -26,7 +26,6 @@ export const Auth = () => {
 
 	const { push } = useRouter()
 
-
 	const { mutate } = useMutation({
 		mutationKey: ['auth'],
 		mutationFn: (data: IAuthForm) =>
@@ -35,6 +34,9 @@ export const Auth = () => {
 			toast.success('Login successfully')
 			reset()
 			push(DASHBOARD_PAGES.HOME)
+		},
+		onError() {
+			toast.error('Server is busy')
 		}
 	})
 
