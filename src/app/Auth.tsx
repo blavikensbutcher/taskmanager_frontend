@@ -36,6 +36,7 @@ export const Auth = () => {
 			push(DASHBOARD_PAGES.HOME)
 		},
 		onError(e) {
+			console.log(e)
 			toast.success('Something went wrong :(', {
 				style: {
 					backgroundColor: 'red'
