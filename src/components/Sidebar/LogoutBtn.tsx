@@ -14,7 +14,7 @@ export function LogoutBtn() {
 	const { mutate } = useMutation({
 		mutationKey: ['logout'],
 		mutationFn: () => authService.logout(),
-		onSuccess: () => router.push('/i/dashboard')
+		onSuccess: () => router.push('/')
 	})
 
 	return (
